@@ -1,0 +1,14 @@
+Install command laravel 11
+==>composer create-project laravel/laravel example-app
+
+(1).I have create database and set in env. file 
+
+(2).I have create table with name "create_admin_user" under database/migrations by using command.Before this table create run command 
+php artisan migrate that will create update default tables in the databse.To create new table run command below:
+==>php artisan make:migration create_admin_user
+
+(3).Copy the fields from user table to admin table that update same user fields to admin table.
+
+(4).Now create model for admin rn command.
+==>php artisan make:model Admin
+
