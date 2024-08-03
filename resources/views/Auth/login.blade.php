@@ -6,7 +6,10 @@
             <div class="input">
               <div class="inputBox">
                   <label for="uemail">Email</label>
-                  <input type="email" id="uemail" name="email" placeholder="Email">
+                  <input type="email" id="uemail" name="email" @error('email')class="is-invalid" @enderror value="{{ old('email')}}" placeholder="Email">
+                  @error('email')
+                    <p class="invalid-feedback">{{ $message }}</p>
+                  @enderror
               </div>
                 <div class="inputBox">
                     <label for="upass">Password</label>
