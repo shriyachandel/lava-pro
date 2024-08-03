@@ -15,3 +15,4 @@ php artisan migrate that will create update default tables in the databse.To cre
 (5).Copy the code from user model to admin model.
 
 
+
