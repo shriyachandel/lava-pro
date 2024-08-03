@@ -12,3 +12,6 @@ php artisan migrate that will create update default tables in the databse.To cre
 (4).Now create model for admin rn command.
 ==>php artisan make:model Admin
 
+(5).Copy the code from user model to admin model.
+
+
