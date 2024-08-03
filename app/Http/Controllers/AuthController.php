@@ -26,4 +26,7 @@ class AuthController extends Controller
         ->withErrors($validator);
     }
    }
+   function register(){
+    return view('auth.register');
+   }
 }
