@@ -5,19 +5,31 @@
             <div class="input">
                 <div class="inputBox">
                     <label for="uname">Username</label>
-                    <input type="text" id="uname" name="name" placeholder="Username">
+                    <input type="text" id="uname" name="name" @error('name')class="is-invalid" @enderror placeholder="Username">
+                    @error('name')
+                    <p class="invalid-feedback">{{ $message }}</p>
+                  @enderror
                 </div>
                 <div class="inputBox">
                   <label for="uemail">Email</label>
-                  <input type="email" id="uemail" name="email" placeholder="Email">
+                  <input type="email" id="uemail" name="email" @error('email')class="is-invalid" @enderror placeholder="Email">
+                  @error('email')
+                    <p class="invalid-feedback">{{ $message }}</p>
+                  @enderror
               </div>
                 <div class="inputBox">
                     <label for="upass">Password</label>
-                    <input type="password" id="upass" name="password" placeholder="Password">
+                    <input type="password" id="upass" name="password" @error('password')class="is-invalid" @enderror placeholder="Password">
+                    @error('password')
+                    <p class="invalid-feedback">{{ $message }}</p>
+                  @enderror
                 </div>
                 <div class="inputBox">
                   <label for="cpass">Confirm Password</label>
-                  <input type="password" id="cpass" name="password_confirmation" placeholder="Confirm Password">
+                  <input type="password" id="cpass" name="password_confirmation" @error('password_confirmation') class="is-invalid" @enderror placeholder="Confirm Password">
+                  @error('password_confirmation')
+                  <p class="invalid-feedback">{{ $message }}</p>
+                @enderror
               </div>
                 <div class="inputBox">
                     <input type="submit" name="" value="Sign Up"> 
