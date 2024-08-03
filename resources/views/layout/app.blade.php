@@ -10,5 +10,6 @@
     </head>
     <body>
       @yield('content')
+      @yield('register-content')
     </body>
 </html>

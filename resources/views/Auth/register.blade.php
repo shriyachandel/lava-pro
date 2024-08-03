@@ -1,3 +1,5 @@
+@extends('layout.app')
+@section('register-content')
         <form class="form" method="post" action="">
             <h2>Login</h2>
             <div class="input">
@@ -23,4 +25,4 @@
                 <button><i class="fa fa-twitter" aria-hidden="true"></i><p>Signin with Twitter</p></button>
             </div>
           </form>
-
+@endsection

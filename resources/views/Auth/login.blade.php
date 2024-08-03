@@ -17,9 +17,7 @@
                 </div>
             </div>
             <p class="forgot text-center"><a href="#">Forgot Password?</a></p>
-      <div class="inputBox">
-          <input type="submit" value="Sign In"> 
-      </div>
-      <p class="forgot">Don't have a account? <a href="{{route('register.view') }}">Sign Up</a></p>
+            
+            <p class="forgot">Don't have a account? <a href="{{route('register.view') }}">Sign Up</a></p>
           </form>
 @endsection
