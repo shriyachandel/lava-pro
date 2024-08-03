@@ -13,13 +13,13 @@
                     <input type="password" id="upass" name="password" placeholder="Password">
                 </div>
                 <div class="inputBox">
-                    <input type="submit" name="" value="Sign In"> 
+                    <input type="submit"  value="Sign In"> 
                 </div>
             </div>
-            <p class="forgot">Forgot Password? <a href="#">Click Here</a></p>
-            <div class="social">
-                <button><i class="fa fa-facebook" aria-hidden="true"></i><p>Signin with Facebook</p></button>
-                <button><i class="fa fa-twitter" aria-hidden="true"></i><p>Signin with Twitter</p></button>
-            </div>
+            <p class="forgot text-center"><a href="#">Forgot Password?</a></p>
+      <div class="inputBox">
+          <input type="submit" value="Sign In"> 
+      </div>
+      <p class="forgot">Don't have a account? <a href="{{route('register.view') }}">Sign Up</a></p>
           </form>
 @endsection
