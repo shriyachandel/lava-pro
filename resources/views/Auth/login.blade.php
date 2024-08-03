@@ -13,7 +13,10 @@
               </div>
                 <div class="inputBox">
                     <label for="upass">Password</label>
-                    <input type="password" id="upass" name="password" placeholder="Password">
+                    <input type="password" id="upass" name="password"  @error('password')class="is-invalid" @enderror placeholder="Password">
+                    @error('password')
+                    <p class="invalid-feedback">{{ $message }}</p>
+                  @enderror
                 </div>
                 <div class="inputBox">
                     <input type="submit"  value="Sign In"> 
