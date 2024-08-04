@@ -3,6 +3,12 @@
      <form class="form" method="post" action="{{ route('authenticate')}}">
       @csrf
             <h2>Login</h2>
+            @if(Session::has('success'))
+            <div class="alert alert-success">{{Session::get('success')}}</div>
+            @endif
+            @if(Session::has('error'))
+            <div class="alert alert-danger">{{Session::get('error')}}</div>
+            @endif
             <div class="input">
               <div class="inputBox">
                   <label for="uemail">Email</label>
