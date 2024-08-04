@@ -157,7 +157,11 @@ body
 form label {
     color: white;
 }
-
+p.error.text-danger {
+    width: 100%;
+    font-size: .875em;
+    color: var(--bs-form-invalid-color);
+}
 
 
 
