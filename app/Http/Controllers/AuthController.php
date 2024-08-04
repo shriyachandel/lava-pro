@@ -56,7 +56,7 @@ class AuthController extends Controller
        
     ]);
 
-    if ($validator->passes()) {
+    if ($validator->passes()) { 
         
     } else {
         return redirect()->route('register.view')
