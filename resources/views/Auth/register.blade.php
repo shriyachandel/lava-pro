@@ -31,6 +31,34 @@
                   <p class="invalid-feedback">{{ $message }}</p>
                 @enderror
               </div>
+              <div class="inputBox">
+                <label for="uage">Age</label>
+                <input type="number" id="uage" name="age" @error('age')class="is-invalid" @enderror placeholder="Age">
+                @error('age')
+                <p class="invalid-feedback">{{ $message }}</p>
+              @enderror
+            </div>
+            <div class="inputBox">
+              <label for="uage">Gender</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" value="Male">
+              <label for="flexRadioDefault1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" value="Female">
+            <label for="flexRadioDefault2">
+              Female
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault3" value="Other">
+            <label for="flexRadioDefault3">
+              Other
+            </label>
+        </div>
                 <div class="inputBox">
                     <input type="submit" name="" value="Sign Up"> 
                 </div>
