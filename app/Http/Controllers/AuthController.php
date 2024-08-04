@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator; // import validator to use validator
+use App\Models\User; // Import the User model
 
 class AuthController extends Controller
 {
