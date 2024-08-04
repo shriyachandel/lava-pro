@@ -41,19 +41,19 @@
             <div class="inputBox">
               <label for="uage">Gender</label>
             </div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" value="Male">
               <label for="flexRadioDefault1">
                 Male
               </label>
             </div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" value="Female">
             <label for="flexRadioDefault2">
               Female
             </label>
         </div>
-        <div class="form-check">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault3" value="Other">
             <label for="flexRadioDefault3">
               Other

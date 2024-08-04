@@ -19,7 +19,7 @@ body
     position: relative;
     background: #060c21;
     border: 1px solid #000;
-    width: 350px;
+    width: 500px;
     padding: 40px 40px 60px;
     border-radius: 10px;
     text-align: center;
@@ -36,6 +36,9 @@ body
     z-index: -1;
     transform: skew(2deg,1deg);
     border-radius: 10px;
+}
+.form .input .inputBox input::placeholder{
+    color:#d491bd;
 }
 .form h2
 {
@@ -151,7 +154,9 @@ body
 {
     background:linear-gradient(315deg,#5d02ff,#e91e63)
 }
-
+form label {
+    color: white;
+}
 
 
 
