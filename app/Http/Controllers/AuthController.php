@@ -20,6 +20,11 @@ class AuthController extends Controller
         'password'=>'required'
     ]);
     if($validator->passes()){
+        if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])){
+            return redirect()->route('dashboard');
+        }else{
+            return redirect()->route('login')->with('error','Either email or password is incorrect.');
+        }
 
     }else{
         return redirect()->route('login')

@@ -11,5 +11,6 @@
     <body>
       @yield('content')
       @yield('register-content')
+      @yield('dashboard-nav')
     </body>
 </html>
