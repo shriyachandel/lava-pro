@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator; // import validator to use validator
 use App\Models\User; // Import the User model
-
+use Illuminate\Support\Facades\Hash; // Import the Hash facade
 class AuthController extends Controller
 {
    function index(){
@@ -66,6 +66,7 @@ class AuthController extends Controller
             $user->gender = $request->gender;
             $user->city = $request->city;
             $user->save();
+            return redirect()->route('login')->with('success','You have registerd successfully');
     } else {
         return redirect()->route('register.view')
             ->withInput() // This is used to get old value from input fields
