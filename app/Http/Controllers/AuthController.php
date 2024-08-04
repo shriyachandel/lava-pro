@@ -57,7 +57,14 @@ class AuthController extends Controller
     ]);
 
     if ($validator->passes()) { 
-        
+        $user = new User;
+        $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = Hash::make($request->password);
+            $user->age = $request->age;
+            $user->gender = $request->gender;
+            $user->city = $request->city;
+            $user->save();
     } else {
         return redirect()->route('register.view')
             ->withInput() // This is used to get old value from input fields
