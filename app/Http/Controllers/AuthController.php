@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator; // import validator to use validator
 use App\Models\User; // Import the User model
 use Illuminate\Support\Facades\Hash; // Import the Hash facade
+use Illuminate\Support\Facades\Auth; //import auth fasacde to use auth
+
 class AuthController extends Controller
 {
    function index(){
