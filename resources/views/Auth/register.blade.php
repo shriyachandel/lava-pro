@@ -59,6 +59,13 @@
               Other
             </label>
         </div>
+        <div class="inputBox">
+          <label for="ucity">City</label>
+          <input type="text" id="ucity" name="city" @error('city')class="is-invalid" @enderror placeholder="City">
+          @error('city')
+          <p class="invalid-feedback">{{ $message }}</p>
+        @enderror
+      </div>
                 <div class="inputBox">
                     <input type="submit" name="" value="Sign Up"> 
                 </div>
